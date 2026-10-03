@@ -1,0 +1,8 @@
+{
+  "name": "ChronoSink - The Ultimate Time Waster",
+  "description": "An exquisitely crafted suite of addictive micro-games, tactile toys, and procrastination tools designed to delightfully squander your time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
