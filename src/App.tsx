@@ -22,6 +22,7 @@ import { SearchConsoleModal } from './components/SearchConsoleModal';
 import { TabId, TimeWasteStats, StreakData } from './types';
 import { sounds } from './services/sound';
 import { loadStreakData, saveStreakData } from './services/streak';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabId>('feed');
@@ -107,6 +108,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-amber-500/30 selection:text-amber-200">
+      <Analytics />
       {/* Boss Disguise Mode */}
       {isBossMode && <BossScreen onDismiss={() => setIsBossMode(false)} />}
 
